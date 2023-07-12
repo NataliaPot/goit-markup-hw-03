@@ -354,9 +354,6 @@ img {
     flex-shrink: 0;
 }
 
-.footer .link {
-    display: inline-block;
-}
 
 
 
@@ -369,6 +366,7 @@ img {
     letter-spacing: 0.03em;
     color: var(--iris);
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .logo-color-footer {
