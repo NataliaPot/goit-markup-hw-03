@@ -52,8 +52,8 @@ img {
 
 .container {
     max-width: 1158px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -85,7 +85,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--iris);
-    padding-right: 76px;
+    margin-right: 76px;
 }
 
 .logo-color-header {
@@ -99,6 +99,11 @@ img {
 
 .page-nav {
     display: flex;
+    align-items: center;
+}
+
+.page-nav .list {
+    padding: 24px 0
 }
 
 .header-nav .container {
@@ -106,8 +111,6 @@ img {
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
-    padding-top: 24px;
-    padding-bottom: 24px;
 
 }
 
@@ -117,6 +120,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navyblue);
+    padding: 24px 0;
+
 }
 
 .link-list:hover,
@@ -151,12 +156,12 @@ img {
 
 .section-one-index {
     background: var(--navyblue);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .section-one-index .container {
     flex-shrink: 0;
-    padding-bottom: 188px;
-    padding-top: 188px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +175,7 @@ img {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
+    max-width: 496px;
     flex-shrink: 0;
     text-align: center;
 }
@@ -189,7 +194,7 @@ img {
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
+    min-width: 169px
 }
 
 .order-service-button:hover,
@@ -214,6 +219,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .section-two-index .container {
@@ -248,14 +254,20 @@ img {
 
 /* ? Section three */
 
+.section-three-index {
+    padding-bottom: 120px;
+}
+
+.section-three-index .title-two {
+    margin-bottom: 72px;
+}
+
 .section-three-index .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 120px;
 
-    gap: 72px;
 }
 
 .section-three-index .list {
@@ -265,10 +277,16 @@ img {
     gap: 24px;
 }
 
+.list-section-three {
+    width: calc((100% - 48px) / 3);
+}
+
 /* ? section four */
 
 .section-four-index {
     background-color: var(--cloud);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .section-four-index .container {
@@ -276,9 +294,15 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    gap: 72px;
+}
+
+.section-four-index .title-two {
+    margin-bottom: 72px;
+}
+
+.card .title-three {
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .people {
@@ -293,14 +317,11 @@ img {
 }
 
 .card {
-    padding-bottom: 32px;
-    padding-top: 32px;
-    gap: 8px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    padding: 32px 16px;
 }
 
 .section-four-text {
@@ -308,6 +329,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+    text-align: center;
 }
 
 .section-four-index .list {
@@ -321,15 +343,13 @@ img {
 
 .footer {
     background-color: var(--navyblue);
+    padding: 100px 0;
 }
 
 .footer .container {
-    padding-top: 140px;
-    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    gap: 18px;
 }
 
 
@@ -342,6 +362,8 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--iris);
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-color-footer {
@@ -357,10 +379,12 @@ img {
 
 /* Portfolio */
 
-.section-one-portfolio .container {
+.section-one-portfolio {
     padding-top: 96px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
+
+.section-one-portfolio .container {}
 
 .filtr {
     display: flex;
@@ -389,6 +413,7 @@ img {
 .filtr-button:focus {
     background-color: var(--ocean);
     color: var(--white);
+    border: 1px solid transparent;
 }
 
 .list.table {
@@ -398,19 +423,28 @@ img {
     list-style: none;
 }
 
+.section-one-portfolio .list {
+    row-gap: 48px;
+}
+
 .table-element {
-    margin-bottom: 48px;
     display: flex;
     height: 420px;
-    width: 360px;
     padding-bottom: 0px;
-    gap: 32px;
+
     flex-shrink: 0;
-    border: 1px solid var(--cornflower, #E7E9FC);
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 0;
+    width: calc((100% - 48px) / 3);
+}
+
+.name-element {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower, #E7E9FC);
+    border-top: none;
 }
 
 .title-element {
@@ -419,9 +453,8 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
     margin-bottom: 8px;
-    padding-left: 16px;
+
 }
 
 .text-element {
@@ -429,6 +462,4 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-    padding-left: 16px;
-    padding-bottom: 32px;
 }
