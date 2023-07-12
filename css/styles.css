@@ -393,12 +393,12 @@ img {
     gap: 24px;
 }
 
-.list.filtr {
+.section-one-portfolio .list.filtr {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
     margin-bottom: 72px;
+    gap: 24px;
 }
 
 .filtr-button {
