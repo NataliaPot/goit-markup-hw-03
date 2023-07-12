@@ -222,13 +222,15 @@ img {
     margin-bottom: 8px;
 }
 
+.section-two-index {
+    padding: 120px 0;
+}
+
 .section-two-index .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .section-two-index .list {
