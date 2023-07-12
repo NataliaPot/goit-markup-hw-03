@@ -354,7 +354,7 @@ img {
     flex-shrink: 0;
 }
 
-.footer .link {
+.logo-footer.link {
     display: inline-block;
 }
 
@@ -393,7 +393,7 @@ img {
     gap: 24px;
 }
 
-.filtr {
+.list.filtr {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,7 +426,6 @@ img {
 .list.table {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
     list-style: none;
 }
 
