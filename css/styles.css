@@ -365,12 +365,9 @@ img {
     letter-spacing: 0.03em;
     color: var(--iris);
     margin-bottom: 16px;
-
-}
-
-.footer .logo-footer {
     display: inline-block;
 }
+
 
 .logo-color-footer {
     color: var(--cloud);
