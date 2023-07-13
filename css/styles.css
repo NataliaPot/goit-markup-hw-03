@@ -348,12 +348,7 @@ img {
     padding: 100px 0;
 }
 
-.footer .container {
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
 
-}
 
 
 .logo-footer {
